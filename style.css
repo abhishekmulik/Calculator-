@@ -1,4 +1,4 @@
-.screen{
+/* .screen{
     width: 34.78%;
     height: 50px;
     border: 1px solid black;
@@ -7,4 +7,35 @@
     border: 1px solid black;
     width: 7.5%;
     text-align: center;
+} */
+
+
+body{
+    background-color:#c3cfe2
+}
+h1{
+    padding-top: 55px;
+    text-align: center;
+    color: navy;
+    font-family: 'Lobster', cursive;
+}
+
+.calculator{
+    border: black solid;
+    padding-left:475px;
+    font-size: x-large;
+}
+#button{
+    width: 100px; 
+}
+#result{
+    width: 406px
+}
+#ac{
+    width: 100px; 
+    background-color: red;
+}
+#equals{
+    width: 100px; 
+    background-color:rgb(32, 202, 32)
 }

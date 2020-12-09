@@ -2,52 +2,65 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <title>Calculator</title>
         <link rel="stylesheet" href="style.css">
     </head>
         <body>
-            <h1>Calculator</h1>
-            <table class="screen">
-                <tr>
-                    <td><input type="text" id="result"/></td>
-                </tr>
-                </table >
-                <form>
-                    <table class="keys">
-                        <tr>
-                            <td><input type="button" value="AC" onclick="clr()"></td>
-                            <td><input type="button" value="%" onclick="solve('%')"/></td>
-                            <td><input type="button" value="=" onclick="equalTo()"/></td>
-                            <td><input type="button" value="bs" onclick="bs()"/></td>
-                        </tr>
-                    <tr>    
-                        <td><input type="button" value="1" onclick="solve('1')"/></td>
-                        <td><input type="button" value="2" onclick="solve('2')"/></td>
-                        <td><input type="button" value="3" onclick="solve('3')"/></td>
-                        <td><input type="button" value="/" onclick="solve('/')"/></td>
-                    </tr>
-                    <tr><td><input type="button" value="4" onclick="solve('4')"/></td>
-                        <td><input type="button" value="5" onclick="solve('5')"/></td>
-                        <td><input type="button" value="6" onclick="solve('6')"/></td>
-                        <td><input type="button" value="*" onclick="solve('*')"/></td>
-                    </tr>
-                    <tr>
-                        <td><input type="button" value="7" onclick="solve('7')"/></td>
-                        <td><input type="button" value="8" onclick="solve('8')"/></td>
-                        <td><input type="button" value="9" onclick="solve('9')"/></td>
-                        <td><input type="button" value="-" onclick="solve('-')"/></td>
-                    </tr>
-                    <tr>
-                        <td><input type="button" value="00" onclick="solve('00')"/></td>
-                        <td><input type="button" value="0" onclick="solve('0')"/></td>
-                        <td><input type="button" value="." onclick="solve('.')"/></td>
-                        <td><input type="button" value="+" onclick="solve('+')"/></td>
-                        
-                    </tr>     
-                   </table>
-                </form>
-                
             
+            <h1>Calculator</h1>
+            
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <p class="card-text">
+                            <div class="calculator">
+                        <table>
+                        <tr>
+                            <td><input type="text" id="result"/></td>
+                        </tr>
+                        </table>
+                        <form>
+                            <table>
+                                <tr>
+                                    <td ><input id="ac" type="button" value="AC" onclick="clr()"></td>
+                                    <td><input id="button" type="button" value="%" onclick="solve('%')"/></td>
+                                    <td><input id="button" type="button" value="/" onclick="solve('/')"/></td>
+                                    <td><input style="width: 100px; background-color:rgb(245, 227, 72);" id="button" type="button" value="&larr;" onclick="bs()"/></td>                 
+                                </tr>
+                                <tr>
+                                    <td><input id="button" type="button" value="7" onclick="solve('7')"/></td>
+                                    <td><input id="button" type="button" value="8" onclick="solve('8')"/></td>
+                                    <td><input id="button" type="button" value="9" onclick="solve('9')"/></td>
+                                    <td><input id="button" type="button" value="*" onclick="solve('*')"/></td>
+                                </tr>
+                                <tr><td><input id="button" type="button" value="4" onclick="solve('4')"/></td>
+                                    <td><input id="button" type="button" value="5" onclick="solve('5')"/></td>
+                                    <td><input id="button" type="button" value="6" onclick="solve('6')"/></td>
+                                    <td><input id="button" type="button" value="-" onclick="solve('-')"/></td>
+                                    
+                                </tr>
+                            <tr>    
+                                <td><input id="button" type="button" value="1" onclick="solve('1')"/></td>
+                                <td><input id="button" type="button" value="2" onclick="solve('2')"/></td>
+                                <td><input id="button" type="button" value="3" onclick="solve('3')"/></td>
+                                <td><input id="button" type="button" value="+" onclick="solve('+')"/></td>
+                                
+                            </tr>                            
+                            <tr>
+                                <td><input id="button" type="button" value="00" onclick="solve('00')"/></td>
+                                <td><input id="button" type="button" value="0" onclick="solve('0')"/></td>
+                                <td><input id="button" type="button" value="." onclick="solve('.')"/></td>
+                                <td><input id="equals" type="button" value="=" onclick="equalTo()"/></td>
+                            </tr>  </div>   
+                           </table>
+                        </p>
+                        </div>
+                    
+            
+                </form>
+            </div>
             <script src="script.js"></script>
         </body>
     </head>
