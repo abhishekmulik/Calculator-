@@ -1,11 +1,10 @@
-#screen{
+.screen{
     width: 34.78%;
     height: 50px;
     border: 1px solid black;
 }
-#keys{
+.keys{
     border: 1px solid black;
     width: 7.5%;
     text-align: center;
-   
 }
